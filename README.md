@@ -1,5 +1,5 @@
 # json-tree
-json - tree create graphical navigation tree from json object. You can move child node to other parent by drag and drop.
+json - tree creates graphical navigation tree from json object. You can move child node to other parent by drag and drop.
 
 # Usage
 Provide array of node element as json. Each node is created by three attributes:<br/> 
