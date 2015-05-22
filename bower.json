@@ -1,0 +1,10 @@
+{
+	"name": "json-tree",
+	"version": "1.0",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/devendrant/json-tree.git"
+	},
+	"dependencies": {
+	}
+}

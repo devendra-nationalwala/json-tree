@@ -1,0 +1,64 @@
+.treeContainer{
+    margin-left: 10px;
+}
+.childContainer{
+    margin-left:25px
+}
+.parentNode,.childNode{
+    font-weight: bold;
+    background: rgb(203, 241, 255);
+    color: #1C6EEE;
+    font-weight: normal;
+    padding: 3px 5px;
+    margin: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    width: auto !important;
+    border: 2px dashed #1C6EEE;
+    display: inline-block;
+    border-radius: 5px;
+    float: none;
+    clear: both;
+    cursor: default;
+}
+.parentNode{
+    background: rgb(255, 203, 203);
+    color: #EC2D2D;
+    float: none;
+    word-break: break-all;
+    clear: both;
+    /*display: inline-block;*/
+    font-weight: bold;
+    border: 2px solid #FB4F4F;
+}
+
+.whiteIco{
+    color:#fff;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+.showDraggable{
+    cursor: move;
+}
+.treeNodeHover{
+    border-radius: 10px;
+    border:3px dashed #000;
+}
+.toggleArrow{
+    cursor: pointer;
+}
+.treeContainer{
+    text-align: left;
+    border:2px dashed #ccc;
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}

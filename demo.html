@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON tree</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jqueryUiJs.js"></script>
+        <script type="text/javascript" src="json-tree.js"></script>
+        <link href="json-tree.css" rel="stylesheet"/>
+        <style>
+            .currentNode{
+                background: rgb(220, 255, 220);
+                border-color: #1FB61F;
+                color: #1FB61F;
+            }
+        </style>
+        <script>
+
+            $(document).ready(function() {
+                var jsonTreeObj = [
+                    {
+                        id: "administrator",
+                        label: "Administrator",
+                        parent: "#"
+                    },
+                    {
+                        id: "SalesTeam",
+                        label: "Sales Team",
+                        parent: "administrator"
+                    },
+                    {
+                        id: "HRTeam",
+                        label: "HR Team",
+                        parent: "administrator"
+                    },
+                    {
+                        id: "user2",
+                        label: "User2 (Jerry)",
+                        parent: "HRTeam"
+                    },
+                    {
+                        id: "FinanceTeam",
+                        label: "Finance Team",
+                        parent: "administrator"
+                    },
+                    {
+                        id: "user3",
+                        label: "Node with css class",
+                        parent: "SalesTeam",
+                        class: "currentNode"
+                    },
+                    {
+                        id: "dnationalwala",
+                        label: "Devendra",
+                        parent: "SalesTeam"
+                    },
+                    {
+                        id: "user1",
+                        label: "User1 (William)",
+                        parent: "SalesTeam"
+                    },
+                    {
+                        id: "user5",
+                        label: "User5 (Team Lead)",
+                        parent: "FinanceTeam"
+                    },
+                    {
+                        id: "user4",
+                        label: "User4 (Tom)",
+                        parent: "FinanceTeam"
+                    }
+
+                ];
+                $(".treeViewer").createTree({
+                    "jsonTreeObj": jsonTreeObj,
+                    "isDraggable": true /*Optional (Default is true)*/
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="treeViewer"></div>
+    </body>
+</html>
