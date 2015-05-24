@@ -34,3 +34,5 @@ $(".treeViewer").createTree({<br/>
                     "jsonTreeObj": jsonTreeObj,<br/>
                     "isDraggable": true /*Optional (Default is true)*/<br/>
                 });<br/>
+
+<img src='https://github.com/devendrant/json-tree/blob/master/assets/preview.PNG'/>
